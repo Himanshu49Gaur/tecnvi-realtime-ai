@@ -27,9 +27,9 @@ gantt
 
 ---
 
-##  Phase Overview & Action Plan
+## 📌 Phase Overview & Action Plan
 
-###  Phase 1: Environment Setup & Project Foundation
+### 🚀 Phase 1: Environment Setup & Project Foundation
 - **Goal**: Initialize project directory, configure dependencies, setup Pydantic settings, and environment templates.
 - **Tasks**:
   1. Create `requirements.txt` with dependencies (`fastapi`, `uvicorn`, `websockets`, `supabase`, `openai`, `pydantic-settings`, `python-dotenv`, `httpx`).
@@ -40,7 +40,7 @@ gantt
 
 ---
 
-###  Phase 2: Database Schema & Supabase Async Service Layer
+### 🗄️ Phase 2: Database Schema & Supabase Async Service Layer
 - **Goal**: Provision Supabase tables and write async CRUD database service helper functions.
 - **Tasks**:
   1. Create `schema.sql` containing DDL for `sessions` and `session_events` tables along with performance indexes.
@@ -54,7 +54,7 @@ gantt
 
 ---
 
-###  Phase 3: WebSocket Connection Manager & Session Lifecycle
+### 🔌 Phase 3: WebSocket Connection Manager & Session Lifecycle
 - **Goal**: Build the FastAPI ASGI server with a robust WebSocket manager for `/ws/session/{session_id}`.
 - **Tasks**:
   1. Create `connection_manager.py` with `ConnectionManager` class to track active WebSocket connections per `session_id`.
@@ -65,7 +65,7 @@ gantt
 
 ---
 
-###  Phase 4: LLM Integration & Real-Time Token Streaming
+### ⚡ Phase 4: LLM Integration & Real-Time Token Streaming
 - **Goal**: Connect OpenAI/Gemini async API and stream tokens back to WebSocket clients in real-time.
 - **Tasks**:
   1. Create `llm_service.py` to manage LLM API calls using async streaming iterators.
@@ -76,7 +76,7 @@ gantt
 
 ---
 
-###  Phase 5: Complex Interaction Engine (Function / Tool Calling & Routing)
+### 🛠️ Phase 5: Complex Interaction Engine (Function / Tool Calling & Routing)
 - **Goal**: Implement function calling capabilities and multi-turn state management.
 - **Tasks**:
   1. Create `tools.py` containing simulated internal functions (e.g., `fetch_user_account`, `get_weather_forecast`, `check_order_status`) and their OpenAI JSON schemas.
@@ -86,7 +86,7 @@ gantt
 
 ---
 
-###  Phase 6: Post-Session Processing & Automation Pipeline
+### 🤖 Phase 6: Post-Session Processing & Automation Pipeline
 - **Goal**: Automate post-session conversation analysis and summarization upon WebSocket disconnect.
 - **Tasks**:
   1. Create `background.py` with `process_post_session(session_id)` background task function.
@@ -97,7 +97,7 @@ gantt
 
 ---
 
-###  Phase 7: Test Frontend UI, Documentation & End-to-End Verification
+### 🎨 Phase 7: Test Frontend UI, Documentation & End-to-End Verification
 - **Goal**: Provide a clean test client UI and complete project documentation.
 - **Tasks**:
   1. Create `static/index.html` with Vanilla JS/CSS for a web interface to test WebSockets, prompt sending, token streaming display, and tool call status badges.
@@ -108,7 +108,6 @@ gantt
 
 ---
 
-##  Execution Status
+## ⏸️ Execution Status
 
 > **Status**: Waiting for user confirmation to start **Phase 1: Environment Setup & Project Foundation**.
-

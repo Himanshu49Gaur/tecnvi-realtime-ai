@@ -4,7 +4,7 @@ High-performance, asynchronous Python backend service that simulates real-time c
 
 ---
 
-##  Core Features
+## 🌟 Core Features
 
 - **Bi-Directional Real-Time WebSockets**: Low-latency bi-directional communication via FastAPI WebSocket router (`/ws/session/{session_id}`).
 - **LLM Token Streaming**: Stream response tokens word-by-word back to the client in real time.
@@ -15,7 +15,7 @@ High-performance, asynchronous Python backend service that simulates real-time c
 
 ---
 
-##  System Architecture
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
@@ -44,7 +44,7 @@ flowchart TD
 
 ---
 
-##  Technology Stack & Dependencies
+## 🛠️ Technology Stack & Dependencies
 
 - **Runtime**: Python 3.11+ (`asyncio`)
 - **Web Framework**: FastAPI `^0.110.0` with Uvicorn ASGI server
@@ -55,7 +55,7 @@ flowchart TD
 
 ---
 
-##  Quick Start & Setup Guide
+## ⚡ Quick Start & Setup Guide
 
 ### 1. Prerequisites
 - Python 3.11+ installed.
@@ -103,7 +103,7 @@ SUPABASE_KEY=your_supabase_anon_or_service_key
 
 ---
 
-##  Supabase Database Schema (SQL Commands)
+## 🗄️ Supabase Database Schema (SQL Commands)
 
 Execute the following SQL commands in your **Supabase SQL Editor** to create the required tables and indexes:
 
@@ -152,7 +152,7 @@ CREATE POLICY "Allow public read/write to session_events" ON public.session_even
 
 ---
 
-##  Running & Testing the WebSocket Server
+## 🚀 Running & Testing the WebSocket Server
 
 ### 1. Launch the Server
 Start the server using `uvicorn`:
@@ -204,7 +204,7 @@ http://localhost:8000
 
 ---
 
-##  Key Design Choices & Rationale
+## 💡 Key Design Choices & Rationale
 
 1. **FastAPI & Asyncio for Native WebSockets**: FastAPI provides native ASGI WebSocket support and integrates with Python's `asyncio` event loop for non-blocking I/O.
 2. **Postgres JSONB for Granular Event Payloads**: Storing flexible event structures in `session_events.payload` using JSONB allows full audit logging of tool arguments, tokens, and system events without requiring constant table schema changes.
@@ -213,7 +213,7 @@ http://localhost:8000
 
 ---
 
-##  Repository File Structure
+## 📁 Repository File Structure
 
 ```
 Tecnvirons/

@@ -130,4 +130,3 @@ def execute_tool(tool_name: str, arguments: Dict[str, Any]) -> Dict[str, Any]:
     except Exception as e:
         logger.error(f"Error executing tool '{tool_name}': {e}")
         return {"error": str(e)}
-

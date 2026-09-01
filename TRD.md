@@ -294,4 +294,3 @@ Tecnvirons/
 6. Verify in Supabase console:
    - `sessions` table updated with `end_time`, `duration_seconds`, `summary`, and `status = 'completed'`.
    - `session_events` table contains full chronological event logs.
-

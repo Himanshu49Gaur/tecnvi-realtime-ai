@@ -178,4 +178,3 @@ async def finalize_session(
             logger.error(f"Supabase error in finalize_session('{session_id}'): {e}")
 
     return _in_memory_sessions.get(session_id, update_data)
-

@@ -287,4 +287,3 @@ async def generate_and_stream_response(session_id: str, prompt: str) -> str:
     )
 
     return full_response
-

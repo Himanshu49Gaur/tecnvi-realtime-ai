@@ -42,4 +42,3 @@ ALTER TABLE public.session_events ENABLE ROW LEVEL SECURITY;
 -- Allow public access for demonstration / API service role
 CREATE POLICY "Allow public read/write to sessions" ON public.sessions FOR ALL USING (true);
 CREATE POLICY "Allow public read/write to session_events" ON public.session_events FOR ALL USING (true);
-
